@@ -7,9 +7,14 @@ app = Flask(__name__)
 def home():
 	render_template('Welcome.html')
 	pass
+
 @app.route('/register')
 def register():
-	render_template('Register.html') 
+	render_template('Register.html')
+	pass 
+@app.route('/Find')
+def Find():
+	render_template('find.hml')
 @app.route('/registered', methods = ['POST'])
 def registered():
 	email = request.form['Email']
@@ -19,4 +24,3 @@ def registered():
 	o.owner(email,scr,ascr,msg)
 	o.register()
 	return home()
-@app
