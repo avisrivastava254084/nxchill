@@ -15,9 +15,11 @@ class Owner:
 		with open(self.fileName, 'a') as csv_file:
 			writer = csv.writer(csv_file)
 			writer.writerow([self.response])
+'''
 userEmailId = raw_input("Please enter your email: ")
 noOfScreens = int(input("Please enter total no of screens in your netflix account: "))
 availableScreens = int(input("Please enter no of screens you want to rent: "))
 message = raw_input("Please enter a message for your netflix buff: ")
 ob = Owner(userEmailId, noOfScreens, availableScreens, message)
 ob.register()
+'''

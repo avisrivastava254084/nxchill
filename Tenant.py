@@ -13,9 +13,9 @@ class Tenant:
 				if(self.screens <= currDict["availableScreens"]):
 					matchList.append(currDict)
 		if(len(matchList) > 0):
-			return matchList
+			return({"list":matchList})
 		else:
 			return "No screens available as per your request."
-screens = input("Please enter the total no of screens you want: ")
-ob = Tenant(screens)
-ob.searchScreens()
+#screens = input("Please enter the total no of screens you want: ")
+#ob = Tenant(screens)
+#ob.searchScreens()
