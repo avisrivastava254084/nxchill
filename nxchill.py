@@ -46,5 +46,5 @@ def found():
 		return jsonList
 	return "No screens available"
 
-if __name__ == "__main__":
-	app.run()
+if(__name__ == "__main__"):
+    app.run(debug = True, port = 5000)
